@@ -1,4 +1,37 @@
-# Bibliotea_app 
+# CBA_Modularización
+
+Organice los dos código (Biblioteca_1 y Tarea_2) en Python que nos dio el profesor separando responsabilidades en diferentes carpetas y archivos. 
+
+# Biblioteca_1_app 
+
+
+Ahora mismo tienes TODO en un solo archivo:
+
+    - Modelo (Libro)
+
+    - Lógica de negocio (Biblioteca)
+
+    - Interfaz (menú)
+
+    - Datos de prueba
+
+Eso funciona… pero no escala 😅
+
+
+## 🎯 Objetivo
+
+Separar el código en:
+
+    📦 Modelos → representan datos 
+
+    ⚙️ Servicios / lógica → reglas del negocio
+
+    🖥️ Interfaz → menú y entrada/salida
+
+    🚀 Archivo principal → punto de entrada
+
+
+## 📁 Estructura recomendada del proyecto 
 ```
 biblioteca_1_app/
 │
@@ -11,5 +44,5 @@ biblioteca_1_app/
 │
 └── services/
     ├── __init__.py
-    └── biblioteca.py
+    └── biblioteca.py 
     ´´´
