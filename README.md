@@ -66,7 +66,7 @@ Vamos a dividirlo en módulos organizados por responsabilidad.
 
 ## 📁 Estructura propuesta del proyecto
 ```
-
+Tareas_2_app/
 │
 ├── main.py
 ├── models/
