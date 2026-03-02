@@ -65,7 +65,7 @@ Vamos a dividirlo en módulos organizados por responsabilidad.
 
 
 
-📁 Estructura propuesta del proyecto
+## 📁 Estructura propuesta del proyecto
 
 todo_app/
 │
@@ -79,7 +79,7 @@ todo_app/
 
 
 
-🎯 Objetivo de cada módulo
+## 🎯 Objetivo de cada módulo
 
 | Archivo                    | Responsabilidad              |
 | -------------------------- | ---------------------------- |
