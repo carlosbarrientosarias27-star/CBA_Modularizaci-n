@@ -1,21 +1,6 @@
-# ============================================================
-# PASO 1 — TODO EN UN SOLO ARCHIVO (sin modularizar)
-# ============================================================
-# ⚠️ Problema: difícil de mantener, escalar o reusar código.
-# Todo: clases, lógica y menú viven juntos en un caos.
-# ============================================================
+# services/biblioteca.py
 
-class Libro:
-    def __init__(self, titulo, autor, precio, cantidad=1):
-        self.titulo    = titulo
-        self.autor     = autor
-        self.precio    = precio
-        self.cantidad  = cantidad
-        self.prestado  = False
-
-    def __str__(self):
-        estado = "PRESTADO" if self.prestado else "DISPONIBLE"
-        return f"[{estado}] '{self.titulo}' de {self.autor} — ${self.precio:.2f} ({self.cantidad} unid.)"
+from models.libro import Libro
 
 
 class Biblioteca:
@@ -79,54 +64,9 @@ class Biblioteca:
     def mostrar_catalogo(self):
         print(f"\n📚 Catálogo de '{self.nombre}':")
         if not self.catalogo:
-            print("   (vacío)")
+            print("   (vacío)") 
+
         for libro in self.catalogo:
-            print(f"   {libro}")
+            print(f"   {libro}") 
 
 
-# ── Menú ──────────────────────────────────────────────────
-def menu():
-    inventario = Biblioteca("Biblioteca Central")
-
-    # Datos de prueba
-    inventario.agregar_libro(Libro("El Quijote", "Cervantes", 15.00, 3))
-    inventario.agregar_libro(Libro("Cien años", "García Márquez", 12.50, 2))
-    inventario.agregar_libro(Libro("1984", "Orwell", 10.00, 1))
-
-    opciones = {
-        "1": lambda: inventario.prestar_libro(input("Título: ")),
-        "2": lambda: inventario.devolver_libro(input("Título: ")),
-        "3": lambda: inventario.comprar_libro(
-            input("Título: "), 
-            input("Autor: "),
-            float(input("Precio: ")), 
-            int(input("Cantidad: "))
-        ),
-        "4": lambda: inventario.vender_libro(input("Título: ")),
-        "5": inventario.mostrar_catalogo,
-    }
-
-    while True:
-        print("""
-=== MENÚ ===
-1. Prestar
-2. Devolver
-3. Comprar
-4. Vender
-5. Catálogo
-0. Salir
-""")
-
-        op = input("Opción: ").strip()
-
-        if op == "0":
-            print("👋 ¡Hasta luego!")
-            break
-        elif op in opciones:
-            opciones[op]()
-        else:
-            print("Opción inválida.")
-
-
-if __name__ == "__main__":
-    menu()
