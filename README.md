@@ -32,7 +32,7 @@ Separar el código en:
 
 
 ## 📁 Estructura recomendada del proyecto 
-
+```
 biblioteca_app/
 │
 ├── main.py
@@ -45,7 +45,7 @@ biblioteca_app/
 └── services/
     ├── __init__.py
     └── biblioteca.py 
-
+    ´´´
 
 
 # Tarea_2_app 
@@ -64,10 +64,9 @@ Ahora mismo tu código mezcla:
 Vamos a dividirlo en módulos organizados por responsabilidad.
 
 
-
 ## 📁 Estructura propuesta del proyecto
+```
 
-todo_app/
 │
 ├── main.py
 ├── models/
@@ -76,7 +75,7 @@ todo_app/
 │   └── task_service.py
 └── utils/
     └── validators.py
-
+    ´´´
 
 
 ## 🎯 Objetivo de cada módulo
