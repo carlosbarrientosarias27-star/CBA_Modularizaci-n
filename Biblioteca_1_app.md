@@ -46,14 +46,3 @@ biblioteca_1_app/
     ├── __init__.py
     └── biblioteca.py 
     ´´´
-
-🧠 Concepto Clave: Separación de Responsabilidades
-
-Cada módulo tiene UNA tarea: 
-
-| Módulo        | Responsabilidad      |
-| ------------- | -------------------- |
-| libro.py      | Representar datos    |
-| biblioteca.py | Lógica del negocio   |
-| menu.py       | Interfaz             |
-| main.py       | Arranque del sistema |
