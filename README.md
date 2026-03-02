@@ -2,7 +2,7 @@
 
 # Bibliotea_app 
 
-'''
+```
 biblioteca_1_app/
 │
 ├── main.py
@@ -15,11 +15,11 @@ biblioteca_1_app/
 └── services/
     ├── __init__.py
     └── biblioteca.py
-    ''' 
+    ´´´
     
 # Tarea_2_app 
 
-'''
+```
 Tarea_2_app/
 │
 ├── main.py
@@ -29,4 +29,4 @@ Tarea_2_app/
 │   └── task_service.py
 └── utils/
     └── validators.py
-    '''
+  ´´´
