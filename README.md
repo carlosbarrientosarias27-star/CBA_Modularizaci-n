@@ -132,7 +132,7 @@ python main.py
 
 # 🛠️ Requisitos
 
-- Python 3.8 o superior
+- Python 3.14
 - No se requieren dependencias externas
 
 ---
